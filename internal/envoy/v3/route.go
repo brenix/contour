@@ -143,6 +143,9 @@ func RouteRoute(r *dag.Route) *envoy_route_v3.Route_Route {
 			&envoy_route_v3.RouteAction_UpgradeConfig{
 				UpgradeType: "websocket",
 			},
+			&envoy_route_v3.RouteAction_UpgradeConfig{
+				UpgradeType: "CONNECT",
+			},
 		)
 	}
 
